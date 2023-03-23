@@ -29,8 +29,6 @@ def main():
                 print("Bright")
             else:
                 print("Dark")
-       
-
 
 
         # Test 3: Blink the LED 4 times with on/off intervals of 200ms.
