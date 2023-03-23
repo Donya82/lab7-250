@@ -1,5 +1,6 @@
 # lab7-250
-Team Members
-Donya Badamchi
-Melissa Shun
+
+## Team Members
+- team member 1
+- team member 2
 
