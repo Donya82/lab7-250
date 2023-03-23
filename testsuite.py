@@ -23,8 +23,8 @@ def main():
         #to determine a threshold for this through experimentation).
 
         for i in range(50):
-        print(mcp.read_adc(0))
-        time.sleep(0.1)
+            print(mcp.read_adc(0))
+            time.sleep(0.1)
          
 
         # Test 3: Blink the LED 4 times with on/off intervals of 200ms.
