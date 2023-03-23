@@ -23,9 +23,15 @@ def main():
         #to determine a threshold for this through experimentation).
 
         for i in range(50):
-            print(mcp.read_adc(0))
+            photo=(mcp.read_adc(0))
             time.sleep(0.1)
-         
+            if ( photo > 300 ):
+                print("Bright")
+            else:
+                print("Dark")
+       
+
+
 
         # Test 3: Blink the LED 4 times with on/off intervals of 200ms.
         for i in range(4):
@@ -40,9 +46,12 @@ def main():
         #magnitude goes above the threshold you decide from experimentation), the LED
         #should turn on for 100 ms.
         for i in range(50):
-            print(mcp.read_adc(1))
+            sound=(mcp.read_adc(1))
             time.sleep(0.1)
-         
+            if ( sound > 300 ):
+              GPIO.output(17,1)
+            else:
+              GPIO.output(17,0)
 
 if __name__ == "__main__":
     main()
