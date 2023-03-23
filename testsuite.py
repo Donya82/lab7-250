@@ -49,9 +49,9 @@ def main():
             sound=(mcp.read_adc(1))
             time.sleep(0.1)
             if ( sound > 300 ):
-              GPIO.output(17,1)
+              GPIO.output(11,1)
             else:
-              GPIO.output(17,0)
+              GPIO.output(11,0)
 
 if __name__ == "__main__":
     main()
